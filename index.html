@@ -1,0 +1,591 @@
+
+<!-- saved from url=(0101)file:///C:/Users/GEDEON%20ARTE%20V%C3%93DALUA/Documents/Gedeon%20Arte%20-%20Artesanato%20Premium.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="descrision" content="da força da terra">
+</head><body>
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedeon Arte - Artesanato Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" "**user:**="" @gurinatan-ai="" :="" https:="" github.com="" gurinatan-ai="" gedeonarte.git"="">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid #8B4513;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            color: #8B4513;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #5C2E0F;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #D2691E;
+            color: white;
+            padding: 0.8rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #D2691E;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #8B4513;
+            border-color: #8B4513;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Mission, Vision, Values Section */
+        .about-section {
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+
+        .about-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .about-card {
+            background: linear-gradient(135deg, #f9f7f4 0%, #f5ede4 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid #D2691E;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-card h3 {
+            color: #8B4513;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .about-card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Values Section */
+        .values-section {
+            background-color: #f9f7f4;
+            padding: 4rem 2rem;
+        }
+
+        .values-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .values-header h2 {
+            color: #8B4513;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .values-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 1.8rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 5px solid #D2691E;
+        }
+
+        .value-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(210, 105, 30, 0.2);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h4 {
+            color: #8B4513;
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .products-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .products-header h2 {
+            color: #8B4513;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .products-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: linear-gradient(135deg, #f9f7f4 0%, #f5ede4 100%);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #D2691E 0%, #8B4513 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h4 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .product-info p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            color: #D2691E;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #8B4513 0%, #1E1009 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 0.5rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #D2691E;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav h1 {
+                font-size: 1.3rem;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>🎨 Gedeon Arte</h1>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#missao">Missão</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#visao">Visão</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#valores">Valores</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#produtos">Produtos</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contato">Contato</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contato">Whatsapp</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contato">instagram</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contato">gurinatan@gmail.com</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contato">Facebook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>GEDEON ARTE</h2>
+            <p>Das mãos que trança a palha</p>
+    <nav style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:25px">
+            <a href="https://wa.me" class="btn" style="background:#5C3519; color: #f6f0e6;; padding:12px 25px; border-radius:20px; font-size: 15px;">Fale com Gedeon no WhatsApp</a>
+            <a href="https://www.instagram.com/gedeon.gomes.33" class="btn" style="background: #5C3519;; color:#f6f0e6; padding:12px 25px; border-radius:20px; font-size: 15px;">Fale com Gedeon no Instagram</a>
+            <a href="mailto:gurinatan@gmail.com" class="btn" style="background:#5C3519; color:#f6f0e6; padding:12px 25px; border-radius:20px; font-size: 15px;">📧 gurinatan@gmail.com</a></nav>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="about-section" id="missao">
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>🎯 Missão</h3>
+                <p>Criar peças artesanais que combinam tradição das mãos que trança a palha, qualidade e inovação, levando beleza e a cultura através do tempo, celebrando a arte o profano e o sagrado e da naturesa vem cor.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>👁️ Visão</h3>
+                <p>Ser referência na preservação e reflorestamento da palha da costa e bio divercidade, reconhecida pela excelência, criatividade e comprometimento com a sustentabilidade, inspirando pessoas em todo o Brasil.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>❤️ Propósito</h3>
+                <p>Transformar e preservar o reflorestamento do nosso meio ambiente mantido  na arte das mãos que trança a palha, preservando a cultura artesanal dos povos originarios, gerando oportunidades e criando conexões genuínas entre ONGS e os artesãos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section" id="valores">
+        <div class="values-header">
+            <h2>Nossos Valores</h2>
+            <p style="color: #666; font-size: 1.1rem;">Princípios que guiam cada criação</p>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">✨</div>
+                <h4>Excelência</h4>
+                <p>Cada peça é criada com maestria, buscando perfeição das mãos que trança a palha.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h4>Empatia</h4>
+                <p>Compreendemos as  nossas necessidades de ter <strong>nossos clientes Parceiros ONGS,</strong> para nos ajudar no aprimoramento de artesenatos feitos das mãos que trança a palha nasce um pedaço do cão!.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🔗</div>
+                <h4>Cumplicidade</h4>
+                <p>Construímos uma relação,<strong>parceiros ONGS e artesão Gedeon Arte</strong> artesãos e parceiros, caminhando juntos para reflorestamento da palha Ex:o dendê, a Piaçava e outros sustentáveis.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">⏳</div>
+                <h4>Longevidade</h4>
+                <p>Criamos produtos artesenato duráveis que vem das mãos que trança a palha, tornando-se patrimônio cultural que atravessam gerações.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🔍</div>
+                <h4>Transparência</h4>
+                <p>nessa <strong>parceiria ONGS e artesões</strong> queremos fazer parte do processos, compartilhando nossa história e nossa origem.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🚀</div>
+                <h4>Modernidade</h4>
+                <p>Evoluímos constantemente, incorporando técnicas contemporâneas respeitando raízes artesanais tradicionais das mãos que trança a palha.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="produtos">
+        <div class="products-header">
+            <h2>Nossos Produtos artesenais</h2>
+            <p style="color: #666; font-size: 1.1rem;">Artesanato: cada mão que faz cultura também planta uma nova flor.Das mãos que trança a palha para sua inspiração</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">🪡</div>
+                <div class="product-info">
+                    <h4>Peças das mãos que trança a palha</h4>
+                    <p>Tecidos bordados e tapetes artesanais com padrões exclusivos das mãos que trança a palha.</p>
+                    <div class="product-price">Venha ser parceiros faça sua doação me chame no WhatsApp</div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🏺</div>
+                <div class="product-info">
+                    <h4>Cerâmica</h4>
+                    <p>Peças de cerâmica moldadas das mãos que trança a palha com acabamento sofisticado.</p>
+                    <div class="product-price">venha ser parceiros ONGS. Reflorestamento já!Palha da costa</div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎨</div>
+                <div class="product-info">
+                    <h4>Arte Visual</h4>
+                    <p>Quadros, painéis e esculturas para sua festa. cestos,chapeu,fruteiras,luminarais,côco de cachaça, feitos para decoração.</p>
+                    <div class="product-price">ONGS aua parceiria é muito importante! Me chama no Instagram</div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💍</div>
+                <div class="product-info">
+                    <h4>Acessórios</h4>
+                    <p>Joias e acessórios artesanais com design contemporâneo das mãos que trança a palha.</p>
+                    <div class="product-price">Gedeon arte.Convido você ONGS para fazer sua doação!</div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🖼️</div>
+                <div class="product-info">
+                    <h4>Decoração</h4>
+                    <p>Objetos decorativos que transformam ambientes com estilo.</p>
+                    <div class="product-price">ONGS preciso de sua doação! ONGS um projeto exige parceiria e tecnollogia!</div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎁</div>
+                <div class="product-info">
+                    <h4>Coleções Especiais</h4>
+                    <p><strong>Das mãos que trança a palha</strong> exclusivas para momentos especiais em sua festa.</p>
+                    <div class="product-price">Nesse cenário você <strong>ONGS é a peincipal oferta doadora desse projeto!</strong></div>
+                    <button class="cta-button" style="width: 100%; border: none;">Mais Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <p>© 2026 Gedeon Arte. Todos os direitos reservados.</p>
+        <p>Artesanato das mãos que trança a palha| Excelência em Cada Detalhe</p>
+        <div class="social-links">
+            <a href="http://127.0.0.1:5500/index.html#" title="Instagram">📱</a>
+            <a href="http://127.0.0.1:5500/index.html#" title="Facebook">f</a>
+            <a href="http://127.0.0.1:5500/index.html#" title="WhatsApp">💬</a>
+            <a href="http://127.0.0.1:5500/index.html#" title="Email">✉️</a>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Telefone:(00)00000-0000 | Email:@gedeonarte.com.br gurinatan@gmail.com</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
